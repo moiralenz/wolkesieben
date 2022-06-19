@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* CSS Variables
+   https://www.w3schools.com/css/css3_variables.asp
+*/
+:root {
+  --success-color: #76ba85;
+  --error-color: #890102;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.on {
+  font-size: 30px;
+  margin-top: 30px !important;
+  padding-top: 0 !important;
+}
+
+nav {
+  display: flex;
+  flex-direction: row !important;
+  font-family: 'indie Flower',
+  cursive;
+}
+
+.navigation {
+font-size: 20px;
+  float: inline-start;
+border-left: 10px;
+color: white;
+border: none;
+border-bottom: white;
+border-bottom-width: 1px;
+border-bottom-style: groove;
+}
+
+.text-nav {
+  margin-top: 35px;
+}
+
+.off {
+  transform: .2s;
+  transition:inherit;
+  -webkit-transition: all .4s ease;
+}
+
+.off:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 50%;
+  padding-top: 0;
+  margin-top: 10px !important;
+}
+
+.nav-formular {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  background-image:url(../assets/verlauf1.jpg);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.w-text {
+  text-align: center;
+  margin: 100px 0px 0px 0px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  font-family: 'indie Flower',
+  cursive;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input#agbs {
+  display: inline;
+  width: auto;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.success select {
+  background-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control.error select {
+  background-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  /* bottom: 0;*/
+  left: 0;
+  visibility: hidden;
+  font-size: .75rem;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid #2c363d;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'indie Flower',
+  cursive;
+  font-size: 25px;
+  }
+
+  .form button:hover {
+    background-color: #2c363d;
+    border: 2px solid black;
+  }
+
+  #birth {
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+    border: 2px solid rgb(241, 241, 241) !important;
+    border-radius: 4px;
+    color: #777;
+    font-family: 'Open Sans',
+    sans-serif;
+  }
+
+  .drop {
+    margin-top: 45px;
+  }
+
+  .label-box {
+    margin-top: 15px;
+  }
+
+  input {
+    padding: 10px 10px 10px 10px !important;
+  }
+
+  /************************ SUBSCRIPTION ************************/
+  /************************ SUBSCRIPTION ************************/
+
+.lead {
+  margin-top: 0px;
+}
+
+#age {
+  font-family: 'Open Sans',
+  sans-serif;
+  color: #777;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'indie Flower',
+  cursive;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.flex-container > div {
+  background-color: #f7f7f7;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 10px;
+  height: 170px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transform: .2s;
+  transition:inherit;
+  -webkit-transition: all .4s ease;
+}
+
+.flex-container > div:hover {
+  transform: scale(1.03);
+}
+
+h1 {
+  font-family: 'indie Flower',
+  cursive;
+  color: white;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.abos {
+  font-family: 'Open Sans',
+  sans-serif;
+  font-size: 15px;
+}
+
+.ul-abo {
+ margin: 0;
+ padding: 0;
+ height: 10px;
+}
+
+.ul-preis {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 0 !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+  /************************ ABOUT US ************************/
+  /************************ ABOUT US ************************/
+
+  .welcome {
+    text-align: center;
+    padding: 120px 0px 50px 0px;
+    margin: 0%;
+  }
+
+  h4 {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  h6 {
+    color: white;
+    text-align: center;
+    margin: 0 30% 0 30%;
+    font-size: 15px;
+  }
+
+  /************************ FOOTER ************************/
+  /************************ FOOTER ************************/
+
+  h5 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 110px;
+    font-size: xx-small;
+  } 

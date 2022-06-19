@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style/input-form.css" />
+  <title>Form Validator</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navigation">
+      <nav>
+        <ul><a href="index.html"><img class='logo' src="./assets/logo_small.png" alt="logo"></ul></a>
+        <ul class="text-nav on">HOME</ul>
+        <ul class="text-nav off"><a href="subscriptions.html">SUBSCRIPTIONS</a></ul>
+        <ul class="text-nav off"><a href="aboutus.html">ABOUT US</a></ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h4 class="w-text">Welcome to Wolke 7, the Cloud for young People.</h4>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>SIGN IN TO ENTER YOUR CLOUD.</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Enter phone number" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="birth">Birth Year</label>
+          <select name="Birth Year" id="birth">
+
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+            <option>1990</option>
+
+          </select>
+          <small class="drop">Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label class="label-box" for="agbs"><input type="checkbox" id="agbs" />I accept the AGB's.</label>
+          <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+  </main>
+
+  <script src="script/validate-inputs.js"></script>
+</body>
+<footer>
+  <h5>© Moira Lenz & Isalena Sutter</h5>
+</footer>
+
+</html>
